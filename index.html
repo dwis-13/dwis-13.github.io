@@ -3,40 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Dwi</title>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Perkenalan Saya</h1>
-    <p>
-        Nama saya Dwi Putri. Ini adalah <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar membuat 
-        <b><i>homepage</i></b>.
-    </p>
-    
-    <p>
-        Kunjungi <a href="https://www.perpusnas.go.id/" target="_blank">website Perpusnas</a> dan 
-        <a href="https://www.instagram.com/perpusnas.go.id/?hl=en" target="_blank">Instagram Perpusnas</a> 
-        untuk lebih banyak informasi!
-    </p>
+
+    <div class="container">
+        <h1>Perkenalan Saya</h1>
+        <p>Nama saya Dwi Putri. Ini adalah <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar membuat <i>homepage</i>.</p>
+        <p>Kunjungi <a href="https://perpusnas.go.id" target="_blank">website Perpusnas</a> dan <a href="https://instagram.com/perpusnas.go.id" target="_blank">Instagram Perpusnas</a> untuk lebih banyak informasi!</p>
+
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/YOUR-ENDPOINT" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
 </body>
 </html>
-<h2>Contact Us</h2>
-<table border="1">
-    <tr>
-        <td><label for="name">Nama:</label></td>
-        <td><input type="text" id="name" name="name" required></td>
-    </tr>
-    <tr>
-        <td><label for="email">Email:</label></td>
-        <td><input type="email" id="email" name="email" required></td>
-    </tr>
-    <tr>
-        <td><label for="message">Pesan:</label></td>
-        <td><textarea id="message" name="message" rows="4" required></textarea></td>
-    </tr>
-    <tr>
-        <td colspan="2" align="center">
-            <button type="submit">Kirim</button>
-        </td>
-    </tr>
-</table>
-
